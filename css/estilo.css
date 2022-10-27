@@ -1,0 +1,233 @@
+/* Patrones Globales */
+
+/* Eliminar margen por defecto del BODY */
+body { margin: 0; }
+
+/* Títulos principales y subtítulos: Barlow */
+h1, h2, h3, h4 { font-family: 'Barlow', sans-serif; }
+
+/* Subtítulos H6: Permanet Marker */
+h6 { font-family: 'Permanent Marker', cursive; }
+nav, a, h5 { font-family: 'Kufam', cursive; }
+
+/* Párrafos, Enlaces, Etiquetas y Formularios: Roboto */
+p, span, form, input, select, textarea, option, button, div { font-family: 'Roboto', sans-serif; }
+
+/* Propiedad display: block; a todas las cajas de estructura para que se comporten como cajas */
+header, main, section, footer, aside, article, figure, figcaption, nav, div { display: block; }
+
+/* Quitar margen que traen por defecto los títulos, subtítulos y párrafos */
+h1, h2, h3, h4, h5, h6, p, figure { margin: 0; }
+
+
+
+/* Estilo Propio */
+
+/* Componente Menú Hamburguesa */
+aside#menu-hamburguesa { width: 290px; height: 100%; display: none; margin: 0; float: none; position: fixed; top: 0; left: -290px; z-index: 99999; background:#255aab; }
+
+aside#menu-hamburguesa a#abrir { width: 35px; height: auto; display: block; margin: 0; float: none; position: absolute; top: 15px; right: -35px; background:#fff ; color: #255aab; text-align: center; padding: 6px 0; font-size: 1.25em; border-radius: 0 5px 5px 0; transition: all 0.3s ease-in; }
+
+aside#menu-hamburguesa a#abrir:hover { background: #d00f0f; transition: all 0.3s ease-in; }
+
+aside#menu-hamburguesa a#cerrar { width: 35px; height: auto; display: none; margin: 0; float: none; position: absolute; top: 15px; right: -35px; background: #fff; color: #255aab; text-align: center; padding: 6px 0; font-size: 1.25em; border-radius: 0 5px 5px 0; transition: all 0.3s ease-in; }
+
+aside#menu-hamburguesa a#cerrar:hover { background: #d00f0f; transition: all 0.3s ease-in; }
+
+aside#menu-hamburguesa nav { height: auto; width: 80%; margin: 10% auto; float: none; position: relative; }
+
+aside#menu-hamburguesa nav a { width: 100%; height: auto; display: block; margin: 0 auto 15px; float: none; position: relative; text-align: center; font-size: 1.25em; line-height: 1em; padding: 10px 0; color: #fff; letter-spacing: 0.07em; font-family:'Kufam', cursive; text-decoration: none; transition: all 0.3s ease-in; }
+
+aside#menu-hamburguesa nav a:hover { color: #d00f0f; transition: all 0.3s ease-in; }
+
+
+
+/* Componente Botón WhatsApp */
+aside#boton-whatsapp { width: 45px; height: 45px; margin: 0; float: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; }
+aside#boton-whatsapp a { width: 100%; height: auto; margin: 0; float: none; position: relative; display: block; text-align: center; color: #fff; background: rgb(43 199 4); font-size: 1.5em; padding: 8px 0; border-radius: 50%; transition: all 0.3s ease-in; }
+aside#boton-whatsapp a:hover { background:#0112a5; transition: all 0.3s ease-in; }
+
+
+
+/* Componente Header Logo y Menú */
+header { width: 100%; height: 80px; margin: 0; float: none; position: fixed; top: 0; left: 0; z-index: 99990; background-color: #255aab; background-size: cover; }
+header article { width: 1100px; height: 90px; margin: 0 auto; float: none; position: relative; }
+header article figure { width: 214px; height: 110px; margin: 0; float: left; position: relative; }
+header article figure a { width: 78%; height: auto; margin: 0 auto; float: none; position: relative; display: block; transition: all 0.3s ease-in; }
+header article figure a img { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; display: block; top: 17px; }
+header article figure a:hover { transform: scale(1.05); transition: all 0.3s ease-in; }
+
+header article nav { width: 503px; height: 40px; margin: 23px 0; float: right; position: relative; }
+header article nav a { width: auto; height: auto; margin: 0 15px; float: left; position: relative; display: block; padding: 12px 0; text-decoration: none; color: #fff; font-weight: 800; font-size: 1em; line-height: 1em; text-transform: uppercase; letter-spacing: 0.09em; transition: all 0.3s ease-in; }
+header article nav a:hover { color: rgb(177, 0, 0); text-shadow: 0 0 8px rgb(0 0 0 / 30%); transition: all 0.3s ease-in; }
+
+
+
+/* Caja Main */
+main { width: 100%; height: auto; margin: 80px auto 0 auto; float: none; position: relative; }
+
+/* Banner Video HTML5 Loop Muted */
+main section#banner-video-loop-muted { width: 100%; height: 88vh; margin: 0 auto; float: none; position: relative; overflow: hidden; }
+
+main section#banner-video-loop-muted div#capa-contenido { width: 100%; height: 88vh; margin: 0 auto; float: none; position: absolute; top: 0; left: 0; z-index: 3; }
+
+main section#banner-video-loop-muted div#capa-contenido h1 { font-size: 2em; line-height: 1em; text-align: center; color: #fff; padding: 42vh 0; letter-spacing: 0.15em; }
+
+main section#banner-video-loop-muted div#capa-color-video { width: 100%; height: 88vh; margin: 0 auto; float: none; position: absolute; top: 0; left: 0; z-index: 2; }
+
+               
+main section#banner-video-loop-muted video { width: 100%; height: 88vh; margin: 0 auto; float: none; position: absolute; top: 0; left: 0; z-index: 1; display: block; background: #000; transform: scale(1.5); }
+
+main section#banner-video-loop-muted video source { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; display: block; }
+
+
+/*  Mapa de Google Maps */
+main section#mapa-googlemaps { width: 69%; height: auto; margin: 212px auto; float: none; position: relative; }
+
+main section#mapa-googlemaps div#capa-mapa-google-maps { width: 100%; height: 88vh; margin: 0 auto; float: none; position: absolute; top: 0; left: 0; z-index: 2; }
+
+main section#mapa-googlemaps h5 { text-align: center; font-size: 3em; line-height: 1em; color: #000; letter-spacing: 0.015em; font-weight: 900; padding: 50px; margin: -143px 0 51px 0; }
+
+main section#mapa-googlemaps iframe { width: 100%; height: 88vh; margin: 0 auto; float: none; position: relative; border-radius: 22px; }
+
+/* GALERIA DE IMAGENES */
+
+main section#galeria-imagenes { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; }
+
+main section#galeria-imagenes article { width: 1100px; height: auto; margin: 0 auto; float: none; position: relative; }
+
+main section#galeria-imagenes article h5 { text-align: center; font-size: 3em; line-height: 1em; color: #000; letter-spacing: 0.015em; font-weight: 900; padding: 50px; margin: -143px 0 51px 0; }
+
+main section#galeria-imagenes article nav { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; padding: 17px 0; }
+main section#galeria-imagenes article nav a { width: 250px; height: 250px; margin: 10px; float: none; position: relative; display: inline-block; overflow: hidden; border-radius: 5px; transition: ease-in; }
+
+main section#galeria-imagenes article nav a img { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; display: block; transition: ease-in; } 
+
+main section#galeria-imagenes article nav a:hover { transition: ease-in; }
+
+main section#galeria-imagenes article nav a:hover img { transform: scale(1.03); filter: saturate(1.5); transition: ease-in; }
+
+
+
+/* Formulario de Contactenos */
+
+main section#formulario-contactenos { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; }
+
+main section#formulario-contactenos article { width: 600px; height: auto; margin: 0 auto; float: none; position: relative; }
+
+main section#formulario-contactenos article h5 { text-align: center; font-size: 3em; line-height: 1em; color: #000; letter-spacing: 0.015em; font-weight: 900; padding: 0; margin: 86px 0 51px 0; }
+
+main section#formulario-contactenos article form#formu-cont { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; padding: 70px 0; }
+
+main section#formulario-contactenos article form#formu-cont input#nombre, 
+main section#formulario-contactenos article form#formu-cont input#correo,
+main section#formulario-contactenos article form#formu-cont input#telefono { width: 93%; height: auto; display: block; margin: 0 auto 10px; float: none; position: relative; border: none; background: #e2e2e2; border-radius: 5px; font-size: 1em; padding: 13px 3%; }
+
+main section#formulario-contactenos article form#formu-cont select#asunto { width: 70%; height: auto; display: block; margin: 0px 0 10px; float: none; border: none; background: #e2e2e2; border-radius: 5px; font-size: 1em; padding: 13px 3%; }
+main section#formulario-contactenos article form#formu-cont select#asunto option {  }
+
+main section#formulario-contactenos article form#formu-cont textarea#mensaje { width: 94%; height: 70px; display: block; margin: 0 auto 10px; float: none; position: relative; border: none; background: #e2e2e2; border-radius: 5px; font-size: 1em; padding: 13px 3%; }
+
+main section#formulario-contactenos article form#formu-cont input#enviar { width: 150px; height: auto; display: block; margin: 0; float: none; position: relative; border: none; background: #16e439; color: #fff; border-radius: 5px; font-size: 1em; padding: 13px 3%; letter-spacing: 0.35em; transition: all 0.3s ease-in; }
+
+main section#formulario-contactenos article form#formu-cont input#enviar:hover { background: #000000; cursor: pointer; transition: all 0.3s ease-in; }
+
+
+main section#formulario-contactenos article form#formu-cont input#nombre:focus, 
+main section#formulario-contactenos article form#formu-cont input#correo:focus,
+main section#formulario-contactenos article form#formu-cont input#telefono:focus,
+main section#formulario-contactenos article form#formu-cont textarea#mensaje:focus { outline: none; background: #333; color: #fff; transition: all 0.3s ease-in; }
+
+
+
+/* Componente Footer Logo al Centro */
+footer { width: 100%; height: 193px; margin: 0 auto; float: none; position: relative; background:  no-repeat bottom center #255aab; background-size: cover; }
+footer figure { width: 182px; height: 97px; margin: 0 auto; float: none; position: relative; top: 71px; }
+footer figure a { width: 95%; height: auto; margin: 0 auto; float: none; position: relative; display: block; transition: all 0.3s ease-in; }
+footer figure a img { width: 110%; height: auto; margin: 0 auto; float: none; position: relative; display: block; }
+footer figure a:hover { transform: scale(1.09); transition: all 0.3s ease-in; }
+
+
+
+
+
+
+/* Zona de Media Queries */
+
+/* Tablets */
+@media only screen and (max-width: 1199px){
+    header { height: 80px; }
+    header article { width: 80%; height: 80px; }
+    header article figure { width: 190px; height: 93px; margin: 0 auto; float: none; }
+    header article nav { display: none; }
+
+
+    aside#menu-hamburguesa { display: block; }
+
+    /* Banner Video HTML5 Loop Muted */
+    main section#banner-video-loop-muted { height: 50vh; }
+
+    main section#banner-video-loop-muted div#capa-contenido { height: 50vh; }
+
+    main section#banner-video-loop-muted div#capa-contenido h1 { font-size: 1.7em; padding: 17vh 50px; }
+
+    main section#banner-video-loop-muted div#capa-color-video { height: 50vh; }
+         
+    main section#banner-video-loop-muted video { height: 50vh; transform: scale(1.5); }
+
+    /*  Mapa de Google Maps */
+    main section#mapa-googlemaps iframe { height: 40vh; }
+    main section#mapa-googlemaps h5 { font-size: 2em; }
+
+
+    /* GALERIA DE IMAGENES */
+
+    main section#galeria-imagenes article { width: 90%; }
+
+    main section#galeria-imagenes article h5 { font-size: 2em; }
+
+    main section#galeria-imagenes article nav { padding: 30px 0; }
+
+    main section#galeria-imagenes article nav a { width: 46%; height: auto; margin: 1.4%; }
+
+    /* FORMULARIO */
+
+
+
+    main section#formulario-contactenos article { width: 80%; }
+
+    main section#formulario-contactenos article h5 { font-size: 2em; }
+
+    main section#formulario-contactenos article form#formu-cont select#asunto { width: 100%; }
+
+
+     
+}
+
+
+@media only screen and (max-width: 699px){
+
+     /* GALERIA DE IMAGENES */
+
+     main section#galeria-imagenes article nav a { width: 48%; margin: 0.5%; }
+
+
+}    
+
+
+
+/* Móviles Grandes */
+@media only screen and (max-width: 499px){
+    /* Banner Video HTML5 Loop Muted */
+    main section#banner-video-loop-muted video { height: 40vh; transform: scale(2.0); }
+
+}
+
+/* Móviles Pequeños */
+@media only screen and (max-width: 399px){
+
+    /* GALERIA DE IMAGENES */
+
+    main section#galeria-imagenes article nav a { width: 100%; margin: 0 auto 15px; float: none; display: block; }
+   
+}

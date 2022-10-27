@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- Título de página -->
+        <title>Expreso Brasilia s.a.</title>
+        <meta title="Expreso Brasilia s.a.">
+
+        <!-- Codificación de caracteres > Caracteres especiales en Español -->
+        <meta charset="utf-8">
+        
+        <!-- Cargar ícono de favoritos -->
+        <link rel="icon" href="img/Pestaña Logo.png">
+
+        <!-- Meta para bloquear el Zoom Out -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Enlace a librería desde CDN: PrefixFree -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+        <!-- Enlace a librería de íconos: FontAwesome Icons -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+        <!-- Enlace a librería de fuentes tipográficas: Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Permanent+Marker&family=Roboto:wght@100;300;400;500;700;900&family=Kufam:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <!-- Cargar CSS propio -->
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+
+    <body>
+        <!-- Componente Menú Hamburguesa -->
+        <aside id="menu-hamburguesa">
+            <a href="#" id="abrir">
+                <i class="fas fa-bars"></i>
+            </a>
+
+            <a href="#" id="cerrar">
+                <i class="fas fa-times"></i>
+            </a>
+            
+            <nav>
+                <a href="#capa-contenido">Inicio</a>
+                <a href="https://saulmerlano.github.io/saul-merlano/">Destinos</a>
+                <a href="#galeria-imagenes">Ofertas</a>
+                <a href="#formulario-contactenos">Contáctenos</a>
+            </nav>
+        </aside>
+
+        <!-- Componente Botón WhatsApp -->
+        <aside id="boton-whatsapp">
+            <a href="https://api.whatsapp.com/send?phone=573113428054" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </aside>
+
+        <!-- Componente Header Logo y Menú -->
+        <header>
+            <article>
+                <figure>
+                    <a href="index.html">
+                        <img src="img/logo-white.png">
+                    </a>
+                </figure>
+
+                <nav>
+                    <a href="#capa-contenido">Inicio</a>
+                    <a href="https://saulmerlano.github.io/saul-merlano/">Destinos</a>
+                    <a href="#galeria-imagenes">Ofertas</a>
+                    <a href="#formulario-contactenos">Contáctenos</a>
+                </nav>
+            </article>
+        </header>
+
+        <!-- Caja Main -->
+        <main>
+            <!--  Banner Video HTML5 Loop Muted Autoplay -->
+           <section id="banner-video-loop-muted">
+            <div id="capa-contenido"></div>
+            <h1></h1>
+              <div id="capa-color-video"></div>
+            <video width="100%" height="700" preload="auto" controls="no" loop muted autoplay>
+            <source src="multimedia/Expreso-Brasilia-s.a-video-fondo.mp4" type="video/mp4">
+            </video>
+             </section>
+
+             <!-- Mapa de Google Maps -->
+            <section id="mapa-googlemaps">
+                <div id="capa-mapa-google-maps"></div>
+                <h5>Ubicación</h5>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d13177.503230042445!2d-74.7984243809634!3d10.910756804654364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sexpreso%20brasilia%20terminal%20barranquilla!5e0!3m2!1ses!2sco!4v1619241096285!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </section>
+
+             <!-- Galeria de FancyApps -->
+             <section id="galeria-imagenes">
+                <article>
+                    <h5>Ofertas y Servicios</h5>
+                  <nav>
+                      <!-- En la etiqueta a se llama a la imagen grande -->
+                     <a href="img/grande-1.jpg" data-fancybox="galeria">
+                           <!-- En la etiqueta img se llama a al imagen pequeña -->
+                        <img src="img/miniatura-1.jpg">
+                     </a>
+
+                     <a href="img/grande-2.jpg" data-fancybox="galeria">
+                        <img src="img/miniatura-2.jpg">
+                     </a>
+
+                     <a href="img/grande-3.jpg" data-fancybox="galeria">
+                       <img src="img/miniatura-3.jpg">
+                     </a>
+
+                     <a href="img/grande-4.jpg" data-fancybox="galeria">
+                         <img src="img/miniatura-4.jpg">
+                     </a>
+
+                     <a href="img/grande-5.jpg" data-fancybox="galeria">
+                       <img src="img/miniatura-5.jpg">
+                     </a>
+
+                     <a href="img/grande-6.jpg" data-fancybox="galeria">                     
+                      <img src="img/miniatura-6.jpg">
+                     </a>
+
+                     <a href="img/grande-7.jpg" data-fancybox="galeria">                        
+                        <img src="img/miniatura-7.jpg">
+                     </a>
+
+                     <a href="img/grande-8.jpg" data-fancybox="galeria">                       
+                      <img src="img/miniatura-8.jpg">
+                     </a>
+
+                   </nav>
+                </article>
+            </section>
+
+
+            <!-- Formulario de Contactenos -->
+            <section id="formulario-contactenos">
+                <article>
+                      <h5>¿Nesecitas Ayuda?</h5>
+                      <form id="formu-cont" action="" method="get">
+                         <input type="text" id="nombre" placeholder="Nombre Completo">
+                         <input type="email" id="correo" placeholder="Correo Electronico">
+                         <input type="tel" id="telefono" placeholder="Teléfono">
+                          <select id="asunto">
+                             <option>Asunto</option>
+                             <option value="mas-info">Pasajes</option>
+                             <option value="ser-distribuidor">Servicio Especial</option>
+                             <option value="pagos-otra-ciudad">Giros</option>
+                             <option value="cotizacion">Brasilia Carga</option>
+                          </select>
+                         <textarea rows="3" id="mensaje" placeholder="Mensaje"></textarea>
+                         <input type="submit" id="enviar" value="ENVIAR">
+                      </form>
+                </article>
+            </section>
+            
+        </main>
+
+        <!-- Componente Footer Logo al Centro -->
+        <footer>
+            <figure>
+                <a href="index.html">
+                    <img src="img/logo-white.png">
+                </a>
+            </figure>
+        </footer>
+
+        <!-- Zona de JavaScript -->
+
+        <!-- 1°: LLamado a jQuery desde un CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <!-- 2°: Llamado a librerías hijo de jQuery -->
+        <!-- jQuery Easing desde CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+        <!-- Llamado a la Libreria de FancyApps -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+        <!-- Cargar JS propio -->
+        <script src="js/script.js"></script>
+    </body>
+</html>
